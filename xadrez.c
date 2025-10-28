@@ -32,6 +32,21 @@ int main() {
         printf("Esquerda\n");
         movrainha++;
     } while (movrainha <= Rainha);
+
+    int movcavalovertical = 2; // casas que o cavalo vai se mover 
+    int movcavalohorizontal = 1;
+
+    printf("\nCavalo se movendo\n");
+    for(int i = 1; i <= movcavalovertical ; i++ )
+    {
+        printf("Baixo\n");
+    }
+    int j = 1;
+    while (j <= movcavalohorizontal)
+    {
+        printf("esquerda\n");
+        j++;
+    }
     
     return 0;
 }
