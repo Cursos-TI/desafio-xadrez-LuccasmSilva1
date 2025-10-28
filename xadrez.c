@@ -1,17 +1,27 @@
 #include <stdio.h>
 
 
-
+void torre(int casas)
+{
+    if (casas == 0) return; 
+    printf("Direita\n");
+    torre( casas - 1);
+}
+void bispo(int casas)
+{
+    if(casas == 0)return;
+    for(int i = 0; i < 1 ;i++ )
+        {
+            for(int j = 0; j < 1 ; j++)
+                {
+                    printf("Cima, Direita\n");
+                }
+        }
+        bispo(casas - 1);
+}
 
 int main() {
-    //TORRE
-    int Torre = 5; //Casa que a torre vai mover
-
-    printf("\nTorre se movendo:\n");
-
-    for (int i = 1; i <= Torre; i++) {
-        printf("Direita\n");
-    }
+   
     //BISPO
     int Bispo = 5; // casas que o bispo vai mover
     int movBispo = 1;
@@ -37,7 +47,7 @@ int main() {
     int movcavalohorizontal = 1;
 
     printf("\nCavalo se movendo\n");
-    for(int i = 1; i <= movcavalovertical ; i++ )
+    for(int i = 1 ; i <= movcavalovertical ; i++ )
     {
         printf("Baixo\n");
     }
