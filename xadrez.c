@@ -50,6 +50,7 @@ int main() {
     bispo(5);
     //movimento da rainha
     printf("\nRainha se movendo:\n");
+    rainha(8);
     //movimento do cavalo
     printf("\nCavalo se movendo:\n");
     cavalo(2,1);
